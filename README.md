@@ -34,31 +34,6 @@ The system is intended for schools, offices, public areas, and other
 announcement-based environments.
 
 ## Block Diagram
-
-GitHub renders Mermaid diagrams directly in Markdown.
-
-``` mermaid
-flowchart TD
-    A["Android Smartphone<br/>Enter notice and passkey"]
-    B["HC-05 Bluetooth Module"]
-    C["LPC2148 Microcontroller<br/>UART reception and passkey validation"]
-    D[("AT25LC512 EEPROM<br/>Store and retrieve notice")]
-    E["LPC2148 Display Control"]
-    F["74HC164 Shift Registers<br/>Column control"]
-    G["74HC573 Latch<br/>Row control"]
-    H["Four 8×8 Dot-Matrix Displays<br/>Scrolling notice"]
-    I["PC / USB-UART Converter<br/>Programming and debugging"]
-
-    A <-->|Bluetooth| B
-    B <-->|UART| C
-    C <-->|Read / write message| D
-    C --> E
-    E --> F
-    E --> G
-    F --> H
-    G --> H
-    I -.->|Development connection| C
-```
 ![Project Output](images/Block_diagram.png)
 ## Features
 
