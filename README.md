@@ -59,7 +59,7 @@ flowchart TD
     G --> H
     I -.->|Development connection| C
 ```
-
+![Project Output](images/Block_diagram.png)
 ## Features
 
 -   Wireless notice transmission from an Android smartphone using
@@ -71,7 +71,7 @@ flowchart TD
 -   Displays **`Waiting for message`** when no message is available in
     EEPROM, as specified in the project procedure.
 -   Uses UART for Bluetooth communication.
-
+![Project Output](images/Block.png)
 > **Security note:** The documented design uses a predefined passkey and
 > message syntax. This should not be described as encrypted
 > communication unless encryption has been implemented separately.
